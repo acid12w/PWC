@@ -1,3 +1,28 @@
+//DROP DOWN MENU
+const dropdownBtn = document.querySelector('#dropdown-toggle');
+const dropdownMenu = document.querySelector('#dropdownNavbar');
+
+
+dropdownBtn.addEventListener('mouseover', function(e){
+    console.log(e.target)
+    dropdownMenu.classList.remove('hidden');
+});
+
+dropdownBtn.addEventListener('mouseleave', function(){
+    console.log("leave")
+    dropdownMenu.classList.add('hidden');
+});
+
+dropdownMenu.addEventListener('mouseover', function(){
+    dropdownMenu.classList.remove('hidden');
+});
+
+dropdownMenu.addEventListener('mouseleave', function(){
+    dropdownMenu.classList.add('hidden');
+});
+
+
+//APPLICATION FORM
 const certification = document.querySelector('#Certification-type');
 const courseType = document.querySelectorAll("#course-type");
 
