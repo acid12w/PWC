@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="We specialize in providing high-quality voice performance services alongside expert business education and consulting services.">
+  <link rel="stylesheet" href="./style.css" />
+  <title>McPherson Voice & Business Dynamics</title>
+  <link rel="icon" type="image/x-icon" href="./images/logo-mark-01.svg">
+  <link rel="apple-touch-icon" href="./images/logo-mark-01.svg">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        fontFamily: {
+          'sans': ['Poppins', 'system-ui',],
+          'serif': ['ui-serif', 'Georgia', ],
+          'mono': ['ui-monospace', 'SFMono-Regular', ],
+          'display': ['Oswald', ],
+          'body': ['Poppins'],
+        }
+      }
+    }
+  </script>
+
+  
+</head>
+<body data-barba="wrapper">
+
+  <main  data-barba="container" data-barba-namespace="home">
+ 
+  
+  
+    <nav id="fade-in" class="absolute w-full z-20 p-4 bg-white">
+        <div class="w-[93%] flex flex-wrap items-center justify-between mx-auto">
+          <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+              <img src="./images/logo-secondary.png" class="h-24" alt="McPherson Voice & Business Dynamics Logo" />
+          </a>
+          <button data-collapse-toggle="navbar-dropdown" id="mobile-nav" type="button" class="mobile-nav inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-100 rounded-lg md:hidden hover:bg-[#F89E00] focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-dropdown" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+              </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto  md:border-0" id="navbar-dropdown">
+            <ul class="cursor-pointer flex flex-col items-center font-medium p-4 md:p-0 mt-4 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+              <li>
+                <a href="index.html" class="cursor-pointer block py-2 px-3 text-[#F89E00] rounded hover:bg-[#F89E00] md:hover:bg-transparent md:border-0 md:hover:text-[#F89E00] md:p-0 " aria-current="page">Home</a>
+              </li>
+              <li>
+                <a href="about.html" class="cursor-pointer block py-2 px-3 text-gray-900 rounded hover:bg-[#F89E00] md:hover:bg-transparent md:border-0 md:hover:text-[#F89E00] md:p-0 " aria-current="page">About</a>
+              </li>
+              <li class="hidden md:block">
+                <button id="dropdown-toggle" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 px-3 text-gray-800 rounded hover:hover:text-[#F89E00] md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto">Programs <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                </svg></button>
+                      
+                      <div id="dropdownNavbar" class="z-10 hidden absolute font-normal bg-white divide-y divide-gray-100 rounded-lg drop-shadow-lg w-44">
+                          <ul class="py-2 text-sm text-gray-900" aria-labelledby="dropdownLargeButton">
+                            <li>
+                              <a href="voice-services.html" class="block px-4 py-2 hover:bg-[#F2CA05]">Bachelor’s Degree</a>
+                            </li>
+                            <li>
+                              <a href="consultanting.html" class="block px-4 py-2 hover:bg-[#F2CA05]">Associate Degree</a>
+                            </li>
+                            <li>
+                              <a href="consultanting.html" class="block px-4 py-2 hover:bg-[#F2CA05]">One Year Diploma</a>
+                            </li>
+                            <li>
+                              <a href="consultanting.html" class="block px-4 py-2 hover:bg-[#F2CA05]">Courses in ICT</a>
+                            </li>
+                            <li>
+                              <a href="consultanting.html" class="block px-4 py-2 hover:bg-[#F2CA05]">Certificate Short Cycle Courses</a>
+                            </li>
+                            <li>
+                              <a href="consultanting.html" class="block px-4 py-2 hover:bg-[#F2CA05]">Teach Yourself Short Cycle Courses</a>
+                            </li>
+                          </ul>
+                      </div>
+                  </li>          
+              <li>
+                <button id="fade-in"  class="text-nowrap bg-[#F2CA05] hover:bg-[#F99F02] focus:ring-4 focus:ring-[#825300] text-base text-white pl-4 pr-2 py-2 rounded-full cursor-pointer"><a href="https://thepathwaycollege.com/login/index.php" class=" flex items-center gap-4">Login <svg class="fill-white w-8 p-[.6rem] bg-[#F99F02] rounded-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. --><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></a></button>
+            </li> 
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+  
+    <div data-barba="container" data-barba-namespace="home">
+      <section id="" class=" overflow-hidden relative h-[70vh] bg-[url('./images/sub-hero-3.png')] bg-center bg-cover flex items-end justify-left p-20">     
+         
+          <div class="z-10 flex flex-col items-left gap-4 ">
+            <h1 id="reveal-type" class="text-5xl text-white">About us</h1>        
+          </div> 
+        
+        </section>
+
+        <section class="text-white flex flex-wrap gap-10 items-center px-6 pb-6 pt-10 pl-20">
+            
+            <div class="max-w-6xl text-center text-gray-900">
+              <h2 class=" text-3xl mb-4">Welcome to Pathway College</h2>
+              <p class="mb-6">
+                Pathway College is an online tertiary institution operating out of Williamsfield, Manchester, in Central Jamaica, and began operations in June 2023.  The College is a vision of excellence in education and offers a pathway to tertiary training programmes  in the field and also entry level job training through its short cycle courses.  At Pathway College, we believe that educational institutions should be impactful and so all our programmes are designed to do just that.                </p>      
+          </section>
+
+          <footer class="relative bg-[#001D44] p-16" > 
+          
+            <div class="w-full max-w-screen-xl mx-auto  md:py-8 z-30 ">
+                <div class="sm:flex sm:items-center sm:justify-between">
+                  <div class="flex flex-col items-center justify-center">
+                    <img class="w-38 mb-6" src="./images/logo.png" alt="McPherson Voice & Business Dynamics logo"/>
+                  </div>
+                    
+                    <ul class="flex flex-wrap justify-center items-center mb-6 text-sm font-medium text-white sm:mb-0 ">
+                        <li>
+                            <a href="about.html" class="hover:underline me-4 md:me-6">Home</a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="hover:underline me-4 md:me-6">About</a>
+                        </li>
+                        <li>
+                            <a href="voice-services.html" class="hover:underline me-4 md:me-6">Programs</a>
+                        </li>
+                    </ul>
+                </div>
+                <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+                <span class="block text-sm text-white sm:text-center">© 2025 All Rights Reserved.</span>
+            </div>
+        </footer>
+    </div>
+  </main>
+
+  
+  
+</body>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+<script src="https://unpkg.com/split-type"></script>
+<script src="https://unpkg.com/lenis@1.0.45/dist/lenis.min.js"></script> 
+
+<script src="https://web3forms.com/client/script.js" async defer></script>
+
+<script src="./index.js"></script>
+
+</html>
