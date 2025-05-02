@@ -1,3 +1,23 @@
+const mobileNav = document.querySelector('#mobile-nav');
+const navbarDropdown = document.querySelector('#navbar-dropdown');
+
+mobileNav.addEventListener('click', function(e){
+    navbarDropdown.classList.toggle('hidden');
+});
+
+gsap.to(".slide-in-up", {
+    scrollTrigger:{ 
+        Trigger: ".about-holder", // start animation when ".box" enters the viewport
+        start: "top center",
+        scrub: 1, 
+        toggleAction: 'restart pause reverse pause'
+    },
+    y: 0,
+    duration: 1.5,
+    ease: "power1.out",
+  });
+
+
 //DROP DOWN MENU
 const dropdownBtn = document.querySelector('#dropdown-toggle');
 const dropdownMenu = document.querySelector('#dropdownNavbar');
