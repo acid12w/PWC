@@ -35,25 +35,43 @@
         <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
             <img src="./images/logo-secondary.png" class="h-24" alt="McPherson Voice & Business Dynamics Logo" />
         </a>
-        <button data-collapse-toggle="navbar-dropdown" id="mobile-nav" type="button" class="mobile-nav inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-900 rounded-lg md:hidden hover:bg-[#F89E00] focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-900 dark:hover:bg-gray-900 dark:focus:ring-gray-600" aria-controls="navbar-dropdown" aria-expanded="false">
-          <span class="sr-only">Open main menu</span>
-          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-          </svg>
-      </button>
+        <button data-collapse-toggle="navbar-dropdown" id="mobile-nav" type="button" class="mobile-nav inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-900 rounded-lg md:hidden hover:bg-[#F89E00] focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-900 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-dropdown" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+            </svg>
+        </button>
         <div class="hidden w-full md:block md:w-auto  md:border-0" id="navbar-dropdown">
           <ul class="cursor-pointer flex flex-col items-center font-medium p-4 md:p-0 mt-4 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
             <li>
-              <a href="index.html" class="cursor-pointer block py-2 px-3 text-[#F89E00] rounded hover:bg-[#F89E00] md:hover:bg-transparent md:border-0 md:hover:text-[#F89E00] md:p-0 " aria-current="page">Home</a>
+              <a href="index.html" class="cursor-pointer block py-2 px-3 text-gray-900 rounded hover:bg-[#F89E00] md:hover:bg-transparent md:border-0 md:hover:text-[#F89E00] md:p-0 " aria-current="page">Home</a>
             </li>
             <li>
               <a href="about.html" class="cursor-pointer block py-2 px-3 text-gray-900 rounded hover:bg-[#F89E00] md:hover:bg-transparent md:border-0 md:hover:text-[#F89E00] md:p-0 " aria-current="page">About</a>
             </li>
             <li>
-              <a href="achademics.html" class="cursor-pointer block py-2 px-3 text-gray-900 rounded hover:bg-[#F89E00] md:hover:bg-transparent md:border-0 md:hover:text-[#F89E00] md:p-0 " aria-current="page">Academics</a>
+              <a href="achademics.html" class="cursor-pointer block py-2 px-3 text-gray-900  rounded hover:bg-[#F89E00] md:hover:bg-transparent md:border-0 md:hover:text-[#F89E00] md:p-0 " aria-current="page">Departments</a>
+            </li>
+            <li class="md:hidden">
+              <a href="bachelor.html" class="block px-4 py-2 hover:bg-[#F2CA05]">Bachelor’s Degree</a>
+            </li>
+            <li class="md:hidden">
+              <a href="accosiate.html" class="block px-4 py-2 hover:bg-[#F2CA05]">Associate Degree</a>
+            </li>
+            <li class="md:hidden">
+              <a href="diploma.html" class="block px-4 py-2 hover:bg-[#F2CA05]">One Year Diploma</a>
+            </li>
+            <li class="md:hidden">
+              <a href="cert.html" class="block px-4 py-2 hover:bg-[#F2CA05]">Courses in ICT</a>
+            </li>
+            <li class="md:hidden">
+              <a href="cert.html" class="block px-4 py-2 hover:bg-[#F2CA05]">Certificate Short Cycle Courses</a>
+            </li>
+            <li class="md:hidden">
+              <a href="cert.html" class="block px-4 py-2 hover:bg-[#F2CA05]">Teach Yourself Short Cycle Courses</a>
             </li>
             <li class="hidden md:block">
-              <button id="dropdown-toggle" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 px-3 text-gray-800 rounded hover:hover:text-[#F89E00] md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto">Programs <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+              <button id="dropdown-toggle" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 px-3  text-[#F89E00] rounded hover:hover:text-[#F89E00] md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto">Programs <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
               </svg></button>
                     
@@ -93,7 +111,7 @@
 
   
     <div data-barba="container" data-barba-namespace="home">
-      <section id="" class=" overflow-hidden relative h-[70vh] bg-[url('./images/sub-hero-2.png')] bg-center bg-cover flex items-end justify-left p-20">     
+      <section id="" class=" overflow-hidden relative h-[70vh] bg-[url('./images/sub-hero-2.png')] bg-center bg-cover flex items-end justify-left p-6 md:p-20">     
          
           <div class="z-10 flex flex-col items-left gap-4 ">
             <h1 id="reveal-type" class="text-5xl text-white">Bachelor’s Degree</h1>
@@ -107,7 +125,7 @@
         
         </section>
 
-        <section class="text-white flex flex-wrap gap-10 items-center px-6 pb-6 pt-10 pl-20">
+        <section class="text-white flex flex-wrap gap-10 items-center p-6 md:px-6 md:pb-6 md:pt-10 md:pl-20">
             
             <div class="max-w-6xl text-gray-900">
               <h2 class=" text-3xl mb-4">A Bachelor’s Degree in Reading and English Language Education</h2>
@@ -116,7 +134,7 @@
                 </p>      
           </section>
 
-          <section class="text-white flex flex-wrap gap-10 items-center px-6 pt-6 pb-10 pl-20">
+          <section class="text-white flex flex-wrap gap-10 items-center p-6 md:px-6 md:pb-6 md:pt-10 md:pl-20">
          
             <div class="max-w-6xl text-gray-900">
               <h2 class=" text-3xl mb-4">Entry Requirements :</h2>
@@ -138,11 +156,17 @@
                             <a href="about.html" class="hover:underline me-4 md:me-6">Home</a>
                         </li>
                         <li>
-                            <a href="contact.html" class="hover:underline me-4 md:me-6">About</a>
+                            <a href="about.html" class="hover:underline me-4 md:me-6">About</a>
                         </li>
                         <li>
-                            <a href="voice-services.html" class="hover:underline me-4 md:me-6">Programs</a>
+                            <a href="achademics.html" class="hover:underline me-4 md:me-6">Departments</a>
                         </li>
+                        <li>
+                          <a href="diploma.html" class="hover:underline me-4 md:me-6">Programs</a>
+                      </li>
+                      <li>
+                        <a href="event.html" class="hover:underline me-4 md:me-6">Events</a>
+                    </li>
                     </ul>
                 </div>
                 <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />

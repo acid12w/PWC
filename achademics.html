@@ -37,22 +37,40 @@
           <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
               <img src="./images/logo-secondary.png" class="h-24" alt="McPherson Voice & Business Dynamics Logo" />
           </a>
-          <button data-collapse-toggle="navbar-dropdown" id="mobile-nav" type="button" class="mobile-nav inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-900 rounded-lg md:hidden hover:bg-[#F89E00] focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-900 dark:hover:bg-gray-900 dark:focus:ring-gray-600" aria-controls="navbar-dropdown" aria-expanded="false">
-            <span class="sr-only">Open main menu</span>
-            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-            </svg>
-        </button>
+          <button data-collapse-toggle="navbar-dropdown" id="mobile-nav" type="button" class="mobile-nav inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-900 rounded-lg md:hidden hover:bg-[#F89E00] focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-900 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-dropdown" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+              </svg>
+          </button>
           <div class="hidden w-full md:block md:w-auto  md:border-0" id="navbar-dropdown">
             <ul class="cursor-pointer flex flex-col items-center font-medium p-4 md:p-0 mt-4 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
               <li>
-                <a href="index.html" class="cursor-pointer block py-2 px-3 text-[#F89E00] rounded hover:bg-[#F89E00] md:hover:bg-transparent md:border-0 md:hover:text-[#F89E00] md:p-0 " aria-current="page">Home</a>
+                <a href="index.html" class="cursor-pointer block py-2 px-3 text-gray-900 rounded hover:bg-[#F89E00] md:hover:bg-transparent md:border-0 md:hover:text-[#F89E00] md:p-0 " aria-current="page">Home</a>
               </li>
               <li>
                 <a href="about.html" class="cursor-pointer block py-2 px-3 text-gray-900 rounded hover:bg-[#F89E00] md:hover:bg-transparent md:border-0 md:hover:text-[#F89E00] md:p-0 " aria-current="page">About</a>
               </li>
               <li>
-                <a href="achademics.html" class="cursor-pointer block py-2 px-3 text-gray-900 rounded hover:bg-[#F89E00] md:hover:bg-transparent md:border-0 md:hover:text-[#F89E00] md:p-0 " aria-current="page">Academics</a>
+                <a href="achademics.html" class="cursor-pointer block py-2 px-3 text-[#F89E00] rounded hover:bg-[#F89E00] md:hover:bg-transparent md:border-0 md:hover:text-[#F89E00] md:p-0 " aria-current="page">Departments</a>
+              </li>
+              <li class="md:hidden">
+                <a href="bachelor.html" class="block px-4 py-2 hover:bg-[#F2CA05]">Bachelor’s Degree</a>
+              </li>
+              <li class="md:hidden">
+                <a href="accosiate.html" class="block px-4 py-2 hover:bg-[#F2CA05]">Associate Degree</a>
+              </li>
+              <li class="md:hidden">
+                <a href="diploma.html" class="block px-4 py-2 hover:bg-[#F2CA05]">One Year Diploma</a>
+              </li>
+              <li class="md:hidden">
+                <a href="cert.html" class="block px-4 py-2 hover:bg-[#F2CA05]">Courses in ICT</a>
+              </li>
+              <li class="md:hidden">
+                <a href="cert.html" class="block px-4 py-2 hover:bg-[#F2CA05]">Certificate Short Cycle Courses</a>
+              </li>
+              <li class="md:hidden">
+                <a href="cert.html" class="block px-4 py-2 hover:bg-[#F2CA05]">Teach Yourself Short Cycle Courses</a>
               </li>
               <li class="hidden md:block">
                 <button id="dropdown-toggle" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 px-3 text-gray-800 rounded hover:hover:text-[#F89E00] md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto">Programs <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
@@ -95,10 +113,10 @@
 
   
     <div data-barba="container" data-barba-namespace="home">
-      <section id="" class=" overflow-hidden relative h-[70vh] bg-[url('./images/sub-hero-5.jpg')] bg-center bg-cover flex items-end justify-left p-20">     
+      <section id="" class=" overflow-hidden relative h-[70vh] bg-[url('./images/sub-hero-5.jpg')] bg-center bg-cover flex items-end justify-left p-6 md:p-20">     
          
           <div class="z-10 flex flex-col items-left gap-4 ">
-            <h1 id="reveal-type" class="text-5xl text-white"> Academics Departments</h1>        
+            <h1 id="reveal-type" class="text-5xl text-white">Departments</h1>        
           </div> 
         
         </section>
@@ -116,14 +134,16 @@
             </div>  
         </section> -->
 
-        <section class="p-20" id="section--4" data-scroll-section="">
+        <section class="p-6 md:p-20" id="section--4" data-scroll-section="">
       
             <div class="cards flex flex-col items-center  ">
     
-                <div class="card-btn__holder mb-16 p-1 shadow-md rounded-full">
+                <div class="card-btn__holder mb-16 p-1 shadow-md rounded-full text-xs flex">
                     <button class="mr-4 bg-[#F99F02] rounded-full p-3 text-white pr-2 border-r" data-type="business">Business </button>
                     <button class=" mr-4 text-gray-500 pr-2 border-r" data-type="education">Education</button>
-                    <button class="text-gray-500" data-type="stem">Legal Studies</button>
+                    <button class="mr-4 text-gray-500 pr-2 border-r" data-type="law">Legal Studies</button>
+                    <button class="mr-4 text-gray-500 pr-2 border-r" data-type="stem">Mathematics and Science</button>
+                    <button class="mr-4 text-gray-500" data-type="accounting">Basic Accounts</button>
                 </div>
     
             <div class="card-holder flex gap-10">   
@@ -131,7 +151,7 @@
                 <div class="card card__type--business">
                     <div class="flex flex-wrap gap-14 items-center justify-center px-6 md:px-16 mb-10">
                         <div class="bg-[url('./images/department-1.jpg')] bg-cover bg-center h-96 w-96 rounded-3xl"></div>
-                        <aside class="w-3/5 content-center">
+                        <aside class="w-full md:w-3/5 content-center">
                             <h2 class="mb-4 text-left text-3xl w-max">Business</h2> 
                             <p class=" mb-4">The Business Education Department at Pathway College equips students with the knowledge, skills, and practical experience needed to succeed in today’s dynamic and competitive business environment. The department blends core business principles with educational theory, preparing graduates for careers in business teaching, corporate training, entrepreneurship, and administration through its Associate Degree programme and Certificate courses.</p>
                             <p class=" mb-4">Through a curriculum that covers accounting, management, marketing, economics, and business communication, students gain a strong foundation in business concepts while also learning how to effectively teach and train others. With an emphasis on real-world application, ethical leadership, and technological proficiency, the department fosters critical thinking, problem-solving, and professional development.</p>
@@ -143,7 +163,7 @@
                 <div class="card card__type--education hidden">
                     <div class="flex flex-wrap gap-14 items-center justify-center px-6 md:px-16 mb-10">
                         <div class="bg-[url('./images/department-2.jpg')] bg-cover bg-left h-96 w-96 rounded-3xl"></div>
-                        <aside class="w-3/5 content-center">
+                        <aside class="w-full md:w-3/5 content-center">
                             <h2 class="mb-4 text-left text-3xl w-max">Education</h2> 
                             <p class=" mb-4">The Education Department at Pathway Way College is committed to developing the next generation of educators, literacy leaders, and advocates who are equipped to make a meaningful impact in diverse educational settings. Rooted in a foundation of research-based practices, equity, and lifelong learning, the department offers a comprehensive programme that prepare students for a career in teaching, educational leadership, and related fields.</p>
                             <p class=" mb-4">Through a blend of theoretical coursework, practical field experiences, and strong partnerships with local schools, our students will gain the knowledge, skills, and real-world insight necessary to support learners in the classroom and inspire them to become model citizens. The department emphasizes inclusive education, reflective practice, and the integration of technology in modern classrooms.</p>
@@ -155,10 +175,33 @@
                 <div class="card card__type--stem hidden">
                     <div class="flex flex-wrap gap-14 items-center justify-center px-6 md:px-16 mb-10">
                         <div class="bg-[url('./images/department-3.jpg')] bg-cover bg-center h-96 w-96 rounded-3xl"></div>
-                        <aside class="w-3/5 content-center">
+                        <aside class="w-full md:w-3/5 content-center">
                             <h2 class="mb-4 text-left text-3xl w-max">Mathematics and Science</h2> 
                             <p class=" mb-4">The Mathematics and Science Department at Pathway College serves as one of the cornerstones of the institution’s academic foundation, providing students with the knowledge and skills essential for success in an increasingly complex and technology-driven world.</p>
                             <p class=" mb-4">Combining the disciplines of mathematics, biology, chemistry, physics, and environmental science, the department aims to foster critical thinking, problem-solving, and analytical reasoning through a rigorous online teacher training programme in a supportive learning environment.</p>
+                        </aside>
+                    </div> 
+                </div>
+
+                <div class="card card__type--law hidden">
+                    <div class="flex flex-wrap gap-14 items-center justify-center px-6 md:px-16 mb-10">
+                        <div class="bg-[url('./images/law.jpg')] bg-cover bg-center h-96 w-96 rounded-3xl"></div>
+                        <aside class="w-full md:w-3/5 content-center">
+                            <h2 class="mb-4 text-left text-3xl w-max">Legal Studies</h2> 
+                            <p class=" mb-4">The Mathematics and Science Department at Pathway College serves as one of the cornerstones of the institution’s academic foundation, providing students with the knowledge and skills essential for success in an increasingly complex and technology-driven world.</p>
+                            <p class=" mb-4">Combining the disciplines of mathematics, biology, chemistry, physics, and environmental science, the department aims to foster critical thinking, problem-solving, and analytical reasoning through a rigorous online teacher training programme in a supportive learning environment.</p>
+                        </aside>
+                    </div> 
+                </div>
+
+                <div class="card card__type--accounting hidden">
+                    <div class="flex flex-wrap gap-14 items-center justify-center px-6 md:px-16 mb-10">
+                        <div class="bg-[url('./images/department-5.jpg')] bg-cover bg-center h-96 w-96 rounded-3xl"></div>
+                        <aside class="w-full md:w-3/5 content-center">
+                            <h2 class="mb-4 text-left text-3xl w-max">Basic Accounts</h2> 
+                            <p class=" mb-4">Accounts is an introductory course designed to provide students with a foundational understanding of accounting principles and practices. The course covers key topics such as the accounting cycle, double-entry bookkeeping, preparation of financial statements, and the interpretation of financial information.</p>
+                            <p class=" mb-4">Students will learn how to record, classify, and summarize business transactions using standard accounting methods. Emphasis is placed on accuracy, ethical standards, and the practical application of accounting in personal, academic, and business contexts.</p>
+                            <p class=" mb-4">By the end of the course, students will be able to prepare basic financial statements and understand how accounting supports effective financial decision-making in organizations.</p>
                         </aside>
                     </div> 
                 </div>
@@ -169,28 +212,34 @@
     
         <footer class="relative bg-[#001D44] p-16" > 
           
-            <div class="w-full max-w-screen-xl mx-auto  md:py-8 z-30 ">
-                <div class="sm:flex sm:items-center sm:justify-between">
-                  <div class="flex flex-col items-center justify-center">
-                    <img class="w-38 mb-6" src="./images/logo.png" alt="McPherson Voice & Business Dynamics logo"/>
-                  </div>
-                    
-                    <ul class="flex flex-wrap justify-center items-center mb-6 text-sm font-medium text-white sm:mb-0 ">
-                        <li>
-                            <a href="about.html" class="hover:underline me-4 md:me-6">Home</a>
-                        </li>
-                        <li>
-                            <a href="contact.html" class="hover:underline me-4 md:me-6">About</a>
-                        </li>
-                        <li>
-                            <a href="voice-services.html" class="hover:underline me-4 md:me-6">Programs</a>
-                        </li>
-                    </ul>
+          <div class="w-full max-w-screen-xl mx-auto  md:py-8 z-30 ">
+              <div class="sm:flex sm:items-center sm:justify-between">
+                <div class="flex flex-col items-center justify-center">
+                  <img class="w-38 mb-6" src="./images/logo.png" alt="McPherson Voice & Business Dynamics logo"/>
                 </div>
-                <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-                <span class="block text-sm text-white sm:text-center">© 2025 All Rights Reserved.</span>
-            </div>
-        </footer>
+                  
+                  <ul class="flex flex-wrap justify-center items-center mb-6 text-sm font-medium text-white sm:mb-0 ">
+                      <li>
+                          <a href="about.html" class="hover:underline me-4 md:me-6">Home</a>
+                      </li>
+                      <li>
+                          <a href="about.html" class="hover:underline me-4 md:me-6">About</a>
+                      </li>
+                      <li>
+                          <a href="achademics.html" class="hover:underline me-4 md:me-6">Departments</a>
+                      </li>
+                      <li>
+                        <a href="diploma.html" class="hover:underline me-4 md:me-6">Programs</a>
+                    </li>
+                    <li>
+                      <a href="event.html" class="hover:underline me-4 md:me-6">Events</a>
+                  </li>
+                  </ul>
+              </div>
+              <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+              <span class="block text-sm text-white sm:text-center">© 2025 All Rights Reserved.</span>
+          </div>
+      </footer>
     </div>
   </main>
 
