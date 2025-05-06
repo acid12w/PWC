@@ -33,7 +33,7 @@
     <nav id="fade-in" class="absolute w-full z-20 p-4 bg-white">
       <div class="w-[93%] flex flex-wrap items-center justify-between mx-auto">
         <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
-            <img src="./images/logo-secondary.png" class="h-24" alt="McPherson Voice & Business Dynamics Logo" />
+            <img src="./images/logo-secondary.png" class="h-14 md:h-24" alt="McPherson Voice & Business Dynamics Logo" />
         </a>
         <button data-collapse-toggle="navbar-dropdown" id="mobile-nav" type="button" class="mobile-nav inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-900 rounded-lg md:hidden hover:bg-[#F89E00] focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-900 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-dropdown" aria-expanded="false">
             <span class="sr-only">Open main menu</span>
@@ -42,12 +42,12 @@
             </svg>
         </button>
         <div class="hidden w-full md:block md:w-auto  md:border-0" id="navbar-dropdown">
-          <ul class="cursor-pointer flex flex-col items-center font-medium p-4 md:p-0 mt-4 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+          <ul class="cursor-pointer flex flex-col md:items-center font-medium md:p-4 md:p-0 mt-4 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
             <li>
-              <a href="index.html" class="cursor-pointer block py-2 px-3 text-gray-900 rounded hover:bg-[#F89E00] md:hover:bg-transparent md:border-0 md:hover:text-[#F89E00] md:p-0 " aria-current="page">Home</a>
+              <a href="index.html" class="cursor-pointer block py-2 px-3 text-[#F89E00] rounded hover:bg-[#F89E00] md:hover:bg-transparent md:border-0 md:hover:text-[#F89E00] md:p-0 " aria-current="page">Home</a>
             </li>
             <li>
-              <a href="about.html" class="cursor-pointer block py-2 px-3  rounded hover:bg-[#F89E00] md:hover:bg-transparent md:border-0 md:hover:text-[#F89E00] md:p-0 " aria-current="page">About</a>
+              <a href="about.html" class="cursor-pointer block py-2 px-3 text-gray-900 rounded hover:bg-[#F89E00] md:hover:bg-transparent md:border-0 md:hover:text-[#F89E00] md:p-0 " aria-current="page">About</a>
             </li>
             <li>
               <a href="achademics.html" class="cursor-pointer block py-2 px-3 text-gray-900 rounded hover:bg-[#F89E00] md:hover:bg-transparent md:border-0 md:hover:text-[#F89E00] md:p-0 " aria-current="page">Departments</a>
@@ -71,7 +71,7 @@
               <a href="cert.html" class="block px-4 py-2 hover:bg-[#F2CA05]">Teach Yourself Short Cycle Courses</a>
             </li>
             <li class="hidden md:block">
-              <button id="dropdown-toggle" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 px-3 text-[#F89E00] rounded hover:hover:text-[#F89E00] md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto">Programs <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+              <button id="dropdown-toggle" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 px-3 text-gray-800 rounded hover:hover:text-[#F89E00] md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto">Programs <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
               </svg></button>
                     
@@ -98,7 +98,7 @@
                         </ul>
                     </div>
                 </li>   
-                <li>
+                <li class="mb-2 md:mb-0">
                   <a href="event.html" class="cursor-pointer block py-2 px-3 text-gray-900 rounded hover:bg-[#F89E00] md:hover:bg-transparent md:border-0 md:hover:text-[#F89E00] md:p-0 " aria-current="page">Events</a>
                 </li>       
             <li>
@@ -138,12 +138,12 @@
               <p class="mb-6">Four CSEC Subjects including English Language and Mathematics at Grades One, Two, or Three.</p>
           </section>
 
-          <footer class="relative bg-[#001D44] p-16" > 
+          <footer class="relative bg-[#001D44] p-6 md:p-16" > 
           
             <div class="w-full max-w-screen-xl mx-auto  md:py-8 z-30 ">
                 <div class="sm:flex sm:items-center sm:justify-between">
                   <div class="flex flex-col items-center justify-center">
-                    <img class="w-38 mb-6" src="./images/logo.png" alt="McPherson Voice & Business Dynamics logo"/>
+                    <img class="w-38 mb-6 self-start" src="./images/logo.png" alt="McPherson Voice & Business Dynamics logo"/>
                   </div>
                     
                     <ul class="flex flex-wrap justify-center items-center mb-6 text-sm font-medium text-white sm:mb-0 ">
@@ -160,7 +160,7 @@
                           <a href="diploma.html" class="hover:underline me-4 md:me-6">Programs</a>
                       </li>
                       <li>
-                        <a href="event.html" class="hover:underline me-4 md:me-6">Events</a>
+                        <a href="event.html" class="hover:underline mb-4 md:mb-6">Events</a>
                     </li>
                     </ul>
                 </div>

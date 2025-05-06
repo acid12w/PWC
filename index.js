@@ -1,3 +1,5 @@
+// MOBILE NAV
+
 const mobileNav = document.querySelector('#mobile-nav');
 const navbarDropdown = document.querySelector('#navbar-dropdown');
 
@@ -18,7 +20,7 @@ gsap.to(".slide-in-up", {
   });
 
 
-//DROP DOWN MENU
+// NAV DROP DOWN MENU
 const dropdownBtn = document.querySelector('#dropdown-toggle');
 const dropdownMenu = document.querySelector('#dropdownNavbar');
 
@@ -65,9 +67,10 @@ const courseType = document.querySelectorAll("#course-type");
 //     })
 // })
 
-/*==================== Projects tab ====================*/
+/*==================== DEPARTMENT TAB ====================*/
 const cards = document.querySelectorAll(".card");
 const buttonHolder = document.querySelector(".card-btn__holder");
+const btnDep = document.querySelectorAll("#btn-dep");
 
 buttonHolder.addEventListener("click", function (e) {
   const clicked = e.target.dataset.type;
@@ -83,9 +86,19 @@ buttonHolder.addEventListener("click", function (e) {
 //   if (clicked === "all") {
 //     cards.forEach((el) => el.classList.add("card_active"));
 //   }
-  console.log(clicked)
 
-  document
-    .querySelectorAll(`.card__type--${clicked}`)
-    .forEach((el) => el.classList.remove("hidden"));
+    btnDep.forEach(el => {
+        el.classList.remove("text-[#F99F02]");
+       
+        console.log(el === e.target)
+        if(el === e.target){
+            e.target.classList.remove("text-gray-700");
+            e.target.classList.add("text-[#F99F02]");
+        } 
+    })
+  
+
+    document
+        .querySelectorAll(`.card__type--${clicked}`)
+        .forEach((el) => el.classList.remove("hidden"));
 });
