@@ -43,10 +43,10 @@
 
   <main  data-barba="container" data-barba-namespace="home">
  
-    <nav id="fade-in" class="absolute w-full z-20 p-4 bg-white">
+    <nav id="navbar" class="fixed transition-all w-full z-20 p-4 bg-white  ">
       <div class="w-[93%] flex flex-wrap items-center justify-between mx-auto">
-        <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
-            <img src="./images/logo-secondary.png" class="h-14 md:h-24" alt="McPherson Voice & Business Dynamics Logo" />
+        <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse ">
+            <img src="./images/logo-secondary.png" id="logo" class="h-14 md:h-24 transition-all" alt="McPherson Voice & Business Dynamics Logo" />
         </a>
         <button data-collapse-toggle="navbar-dropdown" id="mobile-nav" type="button" class="mobile-nav inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-900 rounded-lg md:hidden hover:bg-[#F89E00] focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-900 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-dropdown" aria-expanded="false">
             <span class="sr-only">Open main menu</span>
@@ -131,14 +131,15 @@
                 <section class="py-20 ">
                     <!-- <h2 class="mb-4 text-3xl text-black text-center w-max m-auto mb-8">Our Team</h2>  -->
                     <div class=" flex gap-10 flex-col items-center">
-                        <div class="flex gap-4">
-                            <h4 class="text-[#F99F02]">Completed</h4>
-                            <h4 class="">Ongoing</h4>
-                            <h4>Upcomming</h4>
+                        <div class="card-btn__holder flex gap-4">
+                            <h4 id="btn-dep" class="text-[#F99F02] pr-2 border-r" data-type="Upcomming">Upcomming</h4>
+                            <h4 id="btn-dep" class="pr-2 border-r"  data-type="Completed">Completed</h4>
+                            <h4 id="btn-dep" class=""  data-type="Ongoing">Ongoing</h4>
+                            
                         </div>
 
-                        <div class="flex flex-wrap p-6">
-                            <div class=" md:mr-8 h-[14em] w-full md:w-[14em] overflow-hidden rounded-3xl bg-[url('./images/event-1.jpg')] bg-cover flex items-end"></div>
+                        <div class="flex flex-wrap justify-center p-6 card card__type--Completed hidden">
+                            <div class=" md:mr-8 w-full h-52 lg:w-[14em] overflow-hidden rounded-3xl bg-[url('./images/event-1.jpg')] bg-cover flex items-end"></div>
                             <div class="p-2 md:p-10 rounded-3xl shadow-md flex flex-col gap-4 justify-center ">
                                 <div class="flex border rounded-xl md:rounded-3xl py-1 px-4">
                                     <svg class="w-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. --><path d="M128 0c17.7 0 32 14.3 32 32l0 32 128 0 0-32c0-17.7 14.3-32 32-32s32 14.3 32 32l0 32 48 0c26.5 0 48 21.5 48 48l0 48L0 160l0-48C0 85.5 21.5 64 48 64l48 0 0-32c0-17.7 14.3-32 32-32zM0 192l448 0 0 272c0 26.5-21.5 48-48 48L48 512c-26.5 0-48-21.5-48-48L0 192zm64 80l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm128 0l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0zM64 400l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0zm112 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16z"/></svg>
@@ -150,7 +151,36 @@
                                 <p class="text-2xl">Classroom Design Workshop</p>
                                 <p>Online</p>
                             </div>
+                      </div>
+
+                      <div class="flex flex-wrap p-6 card card__type--Upcomming justify-center">
+                        <div class=" md:mr-8 mb-6 w-full h-52 lg:w-[14em] overflow-hidden rounded-3xl bg-[url('./images/hero-2.png')] bg-cover flex items-end"></div>
+                        <div class="p-2 md:p-10 rounded-3xl shadow-md flex flex-col gap-4 justify-center w-full lg:w-[70%]">
+                            <div class="flex border rounded-xl md:rounded-3xl py-1 px-4 ">
+                                <svg class="w-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. --><path d="M128 0c17.7 0 32 14.3 32 32l0 32 128 0 0-32c0-17.7 14.3-32 32-32s32 14.3 32 32l0 32 48 0c26.5 0 48 21.5 48 48l0 48L0 160l0-48C0 85.5 21.5 64 48 64l48 0 0-32c0-17.7 14.3-32 32-32zM0 192l448 0 0 272c0 26.5-21.5 48-48 48L48 512c-26.5 0-48-21.5-48-48L0 192zm64 80l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm128 0l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0zM64 400l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0zm112 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16z"/></svg>
+                                <h5 class="mr-6 ">11 Jule 2024</h5>
+                                <span class="border-r-2"></span>
+                                <svg class="mx-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. --><path d="M256 0a256 256 0 1 1 0 512A256 256 0 1 1 256 0zM232 120l0 136c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2 280 120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/></svg>
+                                <h5 >10:00 am - 2:00 pm</h5>
+                            </div>
+                            <div>
+                              <p class="text-2xl">Who is a Shadow Teacher?</p>
+                              <p>A Shadow Teacher is teaching aide or assistant who works directly with a student who has learning and behaviour difficulties, to improve their classroom learning experiences.</p>
+
+                              <p>Usually, a shadow teacher works with students who have learning and behaviour  differences and need the individual support of a para-professional who has been trained to support children with exceptionalities.</p>
+                                
+                              <p> We train and place Shadows with children who need support.</p>
+                                
+                                <p>Apply today.</p>
+                            </div>
                         </div>
+                    </div>
+
+                    <div class="flex flex-wrap p-6 card card__type--Ongoing justify-center hidden">
+                          <div>
+                            <p class="text-2xl">No events found</p>
+                          </div>
+                  </div>
                       
                     </div>
                   </section>

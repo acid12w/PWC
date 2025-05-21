@@ -45,8 +45,8 @@ dropdownMenu.addEventListener('mouseleave', function(){
 
 
 //APPLICATION FORM
-const certification = document.querySelector('#Certification-type');
-const courseType = document.querySelectorAll("#course-type");
+// const certification = document.querySelector('#Certification-type');
+// const courseType = document.querySelectorAll("#course-type");
 
 
 // certification.addEventListener("input", function(e){
@@ -72,33 +72,53 @@ const cards = document.querySelectorAll(".card");
 const buttonHolder = document.querySelector(".card-btn__holder");
 const btnDep = document.querySelectorAll("#btn-dep");
 
-buttonHolder.addEventListener("click", function (e) {
-  const clicked = e.target.dataset.type;
 
+const tabFunc = (buttonGroup, el, buttons)=> {
 
+if (buttonGroup === null) return;
 
-    if (!clicked) return;
-    
-    cards.forEach((el) =>  
-        {if(clicked !== el) {el.classList.add("hidden")}}
-    );
-
-//   if (clicked === "all") {
-//     cards.forEach((el) => el.classList.add("card_active"));
-//   }
-
-    btnDep.forEach(el => {
-        el.classList.remove("text-[#F99F02]");
-       
-        console.log(el === e.target)
-        if(el === e.target){
-            e.target.classList.remove("text-gray-700");
-            e.target.classList.add("text-[#F99F02]");
-        } 
-    })
+buttonGroup.addEventListener("click", function (e) {
+    const clicked = e.target.dataset.type;
   
+    if (!clicked) return;
+      
+      el.forEach((el) =>{ 
+      console.log(el, clicked);
+          {if(clicked !== el) {el.classList.add("hidden")}}}
+      );
+  
+      buttons.forEach(el => {
+          el.classList.remove("text-[#F99F02]");
+         
+          if(el === e.target){
+              e.target.classList.remove("text-gray-700");
+              e.target.classList.add("text-[#F99F02]");
+          } 
+      })
+    
+  
+      document
+          .querySelectorAll(`.card__type--${clicked}`)
+          .forEach((el) => el.classList.remove("hidden"));
+  });
+}
 
-    document
-        .querySelectorAll(`.card__type--${clicked}`)
-        .forEach((el) => el.classList.remove("hidden"));
-});
+
+  tabFunc(buttonHolder, cards, btnDep);
+  
+  
+  
+  window.onscroll = function() {scrollFunction()};
+  
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+      document.getElementById("navbar").style.padding = "10px 10px";
+      document.getElementById("logo").style.height = "4em";
+    } else {
+      document.getElementById("navbar").style.padding = "30px 10px";
+      document.getElementById("logo").style.height = "6em";
+    }
+  }
+
+
