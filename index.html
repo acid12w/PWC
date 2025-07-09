@@ -42,10 +42,10 @@
 
   <main  data-barba="container" data-barba-namespace="home">
  
-  <nav id="navbar" class="fixed transition-all w-full z-20 p-4 bg-white  ">
-    <div class="w-[93%] flex flex-wrap items-center justify-between mx-auto">
+  <nav id="navbar" class="fixed transition-all w-full z-20 bg-white">
+    <div class="w-[93%] flex flex-wrap items-center justify-between mx-auto p-2">
       <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse ">
-          <img src="./images/logo-secondary.png" id="logo" class="h-14 md:h-24 transition-all" alt="McPherson Voice & Business Dynamics Logo" />
+          <img src="./images/logo-secondary.png" id="logo" class="h-14 md:h-24 transition-all" alt="Pathway college Logo" />
       </a>
       <button data-collapse-toggle="navbar-dropdown" id="mobile-nav" type="button" class="mobile-nav inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-900 rounded-lg md:hidden hover:bg-[#F89E00] focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-900 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-dropdown" aria-expanded="false">
           <span class="sr-only">Open main menu</span>
@@ -113,7 +113,23 @@
         </ul>
       </div>
     </div>
+    <div id="alert-1" class="flex items-center p-4 text-blue-800 rounded-lg bg-blue-50 dark:bg-gray-800 dark:text-blue-400" role="alert">
+      <svg class="shrink-0 w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+        <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
+      </svg>
+      <span class="sr-only">Info</span>
+      <div class="ms-3 text-sm font-medium">
+        Recruiting Shadows Who is a Shadow Teacher work shop ? 11 Jule 2024 10:00 am - 2:00 pm <a href="https://docs.google.com/forms/d/e/1FAIpQLSfvV6-0F2mMV86XJg4No1GH0SGshaHFjSI_TE6j5TpsAVXXcA/viewform" class="font-semibold underline hover:no-underline">Apply today</a>.
+      </div>
+        <button type="button" id="close-alert" class="ms-auto -mx-1.5 -my-1.5 bg-blue-50 text-blue-500 rounded-lg focus:ring-2 focus:ring-blue-400 p-1.5 hover:bg-blue-200 inline-flex items-center justify-center h-8 w-8 dark:bg-gray-800 dark:text-blue-400 dark:hover:bg-gray-700" data-dismiss-target="#alert-1" aria-label="Close">
+          <span class="sr-only">Close</span>
+          <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+          </svg>
+      </button>
+    </div>
   </nav>
+  
 
   
     <div data-barba="container" data-barba-namespace="home">

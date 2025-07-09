@@ -113,12 +113,33 @@ buttonGroup.addEventListener("click", function (e) {
   
   function scrollFunction() {
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-      document.getElementById("navbar").style.padding = "10px 10px";
+      // document.getElementById("navbar").style.padding = "10px 0px 0px 0px";
       document.getElementById("logo").style.height = "4em";
     } else {
-      document.getElementById("navbar").style.padding = "30px 10px";
+      // document.getElementById("navbar").style.padding = "10px 0px 0px 0px";
       document.getElementById("logo").style.height = "6em";
     }
   }
 
 
+  const slide = document.querySelector("#infinte-slide");
+
+  gsap.set(slide, {
+    x: -750,
+  });
+
+  gsap.to(slide, {
+    x: 1500,
+    duration: 30,
+    ease: "none",
+    repeat: -1,
+    repeatWithPause: 0.5,
+  });
+
+
+  const closeAlert = document.querySelector("#close-alert");
+  const alert = document.querySelector("#alert-1");
+
+  closeAlert.addEventListener("click", function(){
+    alert.style.display = "none";
+  })
