@@ -138,7 +138,7 @@ buttonGroup.addEventListener("click", function (e) {
 
 
   const closeAlert = document.querySelector("#close-alert");
-  const alert = document.querySelector("#alert-1");
+  const alert = document.querySelector("#alert");
 
   closeAlert.addEventListener("click", function(){
     alert.style.display = "none";
