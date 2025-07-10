@@ -122,10 +122,10 @@ buttonGroup.addEventListener("click", function (e) {
   }
 
 
-  const slide = document.querySelector("#infinte-slide");
+  const slide = gsap.utils.toArray("#infinte-slide");
 
   gsap.set(slide, {
-    x: -750,
+    x: -1350,
   });
 
   gsap.to(slide, {
@@ -133,7 +133,7 @@ buttonGroup.addEventListener("click", function (e) {
     duration: 30,
     ease: "none",
     repeat: -1,
-    repeatWithPause: 0.5,
+    repeatWithPause: 0.1,
   });
 
 
