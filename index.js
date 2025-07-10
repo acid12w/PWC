@@ -82,8 +82,7 @@ buttonGroup.addEventListener("click", function (e) {
   
     if (!clicked) return;
       
-      el.forEach((el) =>{ 
-      console.log(el, clicked);
+      el.forEach((el) =>{
           {if(clicked !== el) {el.classList.add("hidden")}}}
       );
   
