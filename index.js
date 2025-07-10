@@ -122,19 +122,19 @@ buttonGroup.addEventListener("click", function (e) {
   }
 
 
-  const slide = gsap.utils.toArray("#infinte-slide");
+  // const slide = gsap.utils.toArray("#infinte-slide");
 
-  gsap.set(slide, {
-    x: -1350,
-  });
+  // gsap.set(slide, {
+  //   x: -1350,
+  // });
 
-  gsap.to(slide, {
-    x: 1500,
-    duration: 30,
-    ease: "none",
-    repeat: -1,
-    repeatWithPause: 0.1,
-  });
+  // gsap.to(slide, {
+  //   x: 1500,
+  //   duration: 30,
+  //   ease: "none",
+  //   repeat: -1,
+  //   repeatWithPause: 0.1,
+  // });
 
 
   const closeAlert = document.querySelector("#close-alert");
